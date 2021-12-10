@@ -1,0 +1,29 @@
+<!-- <view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__bd" wx:for="{{plants2}}" wx:for-item="plant" style="display:flex; flex-direction: row; border-bottom:3px solid rgb(245, 240, 240);" bindtap="detialClick" data-plant = {{item}}>
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image src="{{plant.imageUrl}}" bindtap="preview" 
+                    data-url="{{plant.imageUrl}}" data-id="{{plants2.id}}"  style="width: 300rpx;height:200rpx;"></image>
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title" style="white-space: pre-wrap">识别结果:</view>
+                    <view class="weui-media-box__title">{{plant.plantName}}</view>
+                </view>
+        </view>
+    </view>
+</view> -->
+
+<view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__bd" wx:for-items="{{plants2}}" wx:for-index="index" style="display:flex; flex-direction: row; border-bottom:3px solid rgb(245, 240, 240);" bindtap="detialClick" data-plant="{{item}}">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image src="{{item.imageUrl}}" bindtap="preview" 
+                    data-url="{{item.imageUrl}}" data-id="{{item.id}}"  style="width: 300rpx;height:200rpx;"></image>
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title" style="white-space: pre-wrap">识别结果:</view>
+                    <view class="weui-media-box__title">{{item.plantName}}</view>
+                </view>
+        </view>
+    </view>
+</view>

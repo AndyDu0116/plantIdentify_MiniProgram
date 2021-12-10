@@ -1,0 +1,18 @@
+<image mode="aspectFit" src="{{imageUrl}}"></image>
+<view class="titleText">该图片的识别结果如下:</view>
+<view>(您可以点击正确的识别结果反馈给我们)</view>
+
+<block wx:for="{{listData}}" wx:for-item="item" wx:for-index="index">
+    <view class="bg-g" style="border-bottom:3px solid rgb(245, 240, 240);">{{index+1}}:{{item.plant_name}}</view>
+ </block>
+ <text class="titleText2">如果以上内容都不正确，您也可以在下面的文本框反馈</text>
+ <view class="section">
+  <!-- <textarea bindblur="bindTextAreaBlur" auto-height placeholder="自动变高" /> -->
+  <form bindsubmit="bindFormSubmit">
+    <textarea  style="border: 1rpx solid gainsboro" placeholder="在此可填写正确的分类信息" name="textarea" />
+    <button form-type="submit"> 提交 </button>
+  </form>
+</view>
+
+
+

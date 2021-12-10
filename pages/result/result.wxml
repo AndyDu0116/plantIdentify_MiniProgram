@@ -1,0 +1,18 @@
+<!--pages/result/result.wxml-->
+<image mode="aspectFit" src="{{imageUrl}}"></image>
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">植物类别</view>
+    <view class="th">置信度</view>
+  </view>
+<block wx:for="{{listData2}}" wx:for-item="item">
+  <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+    <view class="td1">{{item.plant_name}}</view>
+    <view class="td2">{{item.identify_prob}}</view>
+  </view>
+  <view class="tr" wx:else>
+    <view class="td1">{{item.plant_name}}</view>
+    <view class="td2">{{item.identify_prob}}</view>
+   </view>
+ </block>
+</view>

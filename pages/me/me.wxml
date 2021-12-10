@@ -1,0 +1,7 @@
+<!--pages/me/me.wxml-->
+<view class="UCenter-bg">
+    <image src="/images/logo.png" mode="widthFix"></image>
+    <view class="text-xl text-bold">植物分类
+      <text class="text-df">v1.0</text>
+    </view>
+  </view>

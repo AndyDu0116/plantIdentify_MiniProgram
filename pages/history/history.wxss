@@ -1,0 +1,5 @@
+/* pages/history/history.wxss */
+
+.weui-media-box__hd_in-appmsg{
+  height: auto;
+}

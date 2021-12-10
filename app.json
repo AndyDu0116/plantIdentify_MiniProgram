@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/history/history",
+    "pages/me/me",
+    "pages/result/result",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史",
+        "iconPath": "/images/know.png",
+        "selectedIconPath": "/images/knowed.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "识别",
+        "iconPath": "/images/insight_wei.png",
+        "selectedIconPath": "/images/insighted.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/images/me.png",
+        "selectedIconPath": "/images/med.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

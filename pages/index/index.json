@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "植物识别",
+    "navigationBarTextStyle": "black"
+  }
+}
